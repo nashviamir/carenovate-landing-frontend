@@ -12,8 +12,8 @@ import {
 } from 'lucide-react';
 import { COMPARISON_DATA } from '@/lib/data';
 
-const BEFORE_IMG = '/images/before.jpg';
-const AFTER_IMG = '/images/after.jpg';
+const BEFORE_IMG = '/carenovate-landing-frontend/images/before.jpg';
+const AFTER_IMG = '/carenovate-landing-frontend/images/after.jpg';
 
 const CHALLENGES = [
   {

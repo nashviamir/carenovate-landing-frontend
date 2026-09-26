@@ -76,7 +76,7 @@ export default function FeatureCards() {
     {/* Image — flex-1 to fill remaining space */}
     <div className="relative flex-1 min-h-[320px] bg-slate-50">
       <Image
-        src="/images/9856.jpg"
+        src="/carenovate-landing-frontend/images/9856.jpg"
         alt="CareHub Smart Dispenser — carousel and pill chambers"
         fill
         sizes="(max-width: 1024px) 100vw, 40vw"
