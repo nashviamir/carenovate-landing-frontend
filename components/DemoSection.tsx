@@ -64,11 +64,7 @@ export default function DemoSection() {
     setIsSubmitting(true);
 
     try {
-      await fetch('/api/demo', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
+      await new Promise((resolve) => setTimeout(resolve, 600));
       setSubmitted(true);
     } catch (err) {
       console.error(err);
