@@ -2,15 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import {
-  AlertTriangle,
-  CheckCircle2,
-  ShieldCheck,
-  Sparkles,
-  ArrowRight,
-} from 'lucide-react';
-import { COMPARISON_DATA } from '@/lib/data';
+import { AlertTriangle, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
 
 const BEFORE_IMG = '/carenovate-landing-frontend/images/before.jpg';
 const AFTER_IMG = '/carenovate-landing-frontend/images/after.jpg';
@@ -74,7 +66,7 @@ export default function ComparisonSection() {
     <section id="comparison" className="py-16 lg:py-20 bg-brandGrey-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4">
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-10">
           <div className="chip-main">
             <Sparkles className="w-3.5 h-3.5" />
             <span>The Reality of Senior Living Medication Management</span>
@@ -90,19 +82,10 @@ export default function ComparisonSection() {
           </p>
         </div>
 
-        {/* Comparison Card */}
-        <div className="mt-10 bg-white rounded-card p-4 sm:p-5 shadow-card border border-brandGrey-50">
-          {/* Controls bar */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pb-4 border-b border-brandGrey-50">
-            <div>
-              <h3 className="text-b-16 text-brandGrey-500">
-                Facility Visual Transformation
-              </h3>
-              <p className="text-r-12 text-brandGrey-300 mt-0.5">
-                Drag the slider handle or click a tab to compare
-              </p>
-            </div>
-
+        {/* Slider Card */}
+        <div className="bg-white rounded-card p-4 sm:p-5 shadow-card border border-brandGrey-50">
+          {/* Tabs */}
+          <div className="flex items-center justify-end pb-4 border-b border-brandGrey-50">
             <div className="flex items-center rounded-btn bg-brandGrey-50 p-1 border border-brandGrey-100">
               <button
                 type="button"
@@ -129,9 +112,8 @@ export default function ComparisonSection() {
             </div>
           </div>
 
-          {/* Slider viewport */}
+          {/* Slider */}
           <div className="relative mt-4 rounded-card-sm overflow-hidden aspect-[16/9] sm:aspect-[21/9] border border-brandGrey-50 bg-brandGrey-50 select-none">
-            {/* After image (background) */}
             <Image
               src={AFTER_IMG}
               alt="CareHub standard — organized, calm, audit-ready facility"
@@ -141,7 +123,6 @@ export default function ComparisonSection() {
               draggable={false}
             />
 
-            {/* Before image (clipped) — بدون badge داخل لایه */}
             <div
               className="absolute inset-0 overflow-hidden"
               style={{ width: `${sliderPosition}%` }}
@@ -163,7 +144,7 @@ export default function ComparisonSection() {
               </div>
             </div>
 
-            {/* Before badge — بیرون از لایه، ثابت */}
+            {/* Before badge */}
             <div
               className={`absolute top-3 left-3 z-10 bg-white/95 backdrop-blur-sm border border-brandOrange-200 text-brandOrange-800 px-3 py-1 rounded-chip text-m-12 flex items-center gap-1.5 shadow-card pointer-events-none whitespace-nowrap transition-opacity duration-200 ${
                 showBeforeBadge ? 'opacity-100' : 'opacity-0'
@@ -173,7 +154,7 @@ export default function ComparisonSection() {
               <span>Current Manual Chaos &amp; Binders</span>
             </div>
 
-            {/* After badge — بیرون از لایه، ثابت */}
+            {/* After badge */}
             <div
               className={`absolute top-3 right-3 z-10 bg-white/95 backdrop-blur-sm border border-primary-200 text-primary-700 px-3 py-1 rounded-chip text-m-12 flex items-center gap-1.5 shadow-card pointer-events-none whitespace-nowrap transition-opacity duration-200 ${
                 showAfterBadge ? 'opacity-100' : 'opacity-0'
@@ -196,7 +177,6 @@ export default function ComparisonSection() {
               </div>
             </div>
 
-            {/* Range input */}
             <input
               type="range"
               min={0}
@@ -208,23 +188,10 @@ export default function ComparisonSection() {
               className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30"
             />
           </div>
-
-          {/* Legend */}
-          <div className="mt-3 flex items-center justify-between text-r-12 text-brandGrey-400 px-1">
-            <span className="text-brandOrange-700">
-              ← Slide left to view CareHub Standard
-            </span>
-            <span className="hidden sm:inline text-brandGrey-300">
-              Drag horizontally to inspect both environments
-            </span>
-            <span className="text-primary-600">
-              Slide right to view Manual Chaos →
-            </span>
-          </div>
         </div>
 
         {/* Challenges vs CareHub */}
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Challenges */}
           <div className="rounded-card bg-brandOrange-50 border border-brandOrange-200 p-5 sm:p-6">
             <div className="flex items-center gap-3 mb-5">
@@ -292,62 +259,6 @@ export default function ComparisonSection() {
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Comparison Matrix Table */}
-        <div className="mt-12 overflow-x-auto">
-          <div className="min-w-[720px] rounded-card border border-brandGrey-50 bg-white overflow-hidden shadow-card">
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="border-b border-brandGrey-50 bg-brandGrey-50">
-                  <th className="py-3 px-4 text-m-12 uppercase tracking-wider text-brandGrey-400">
-                    Operational Area
-                  </th>
-                  <th className="py-3 px-4 text-m-12 uppercase tracking-wider text-brandOrange-700">
-                    Traditional Practice
-                  </th>
-                  <th className="py-3 px-4 text-m-12 uppercase tracking-wider text-primary-700">
-                    CareHub™ System
-                  </th>
-                  <th className="py-3 px-4 text-m-12 uppercase tracking-wider text-brandGreen-800 text-right">
-                    Verified Impact
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-brandGrey-50">
-                {COMPARISON_DATA.map((row, idx) => (
-                  <tr
-                    key={idx}
-                    className="hover:bg-brandGrey-50/60 transition-colors"
-                  >
-                    <td className="py-3 px-4 text-b-14 text-brandGrey-500 whitespace-nowrap align-top">
-                      {row.feature}
-                    </td>
-                    <td className="py-3 px-4 text-r-14 text-brandGrey-400 align-top">
-                      {row.traditionalFacility}
-                    </td>
-                    <td className="py-3 px-4 text-r-14 text-brandGrey-500 align-top">
-                      {row.careHubSolution}
-                    </td>
-                    <td className="py-3 px-4 text-b-14 text-brandGreen-800 text-right whitespace-nowrap align-top">
-                      {row.impact}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="mt-10 text-center">
-          <Link
-            href="#book-demo-section"
-            className="btn-primary-lg group inline-flex"
-          >
-            <span>Upgrade Your Facility to the CareHub Standard</span>
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </Link>
         </div>
       </div>
     </section>

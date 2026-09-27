@@ -98,9 +98,9 @@ export default function FaqSection() {
           </p>
           <div className="mt-5">
             <Link
-              href="#book-demo-section"
-              className="btn-primary group inline-flex"
-            >
+  href="/#book-demo-section"
+  className="btn-primary group inline-flex"
+>
               <span>Schedule a Clinical Q&amp;A Walkthrough</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </Link>

@@ -3,26 +3,30 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { Menu, X, Sparkles } from 'lucide-react';
 
 const NAV_LINKS = [
   { label: 'Home', href: '/' },
-  { label: 'Features', href: '#' },
-  { label: 'Benefits', href: '#' },
-  { label: 'Portal', href: '#' },
-  { label: 'FAQ', href: '#' },
-  { label: 'Contact', href: '#' },
+  { label: 'Features', href: '/features' },
+  { label: 'FAQ', href: '/faq' },
 ];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/';
+    return pathname.startsWith(href);
+  };
 
   return (
     <header
@@ -50,27 +54,30 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Desktop Nav — absolutely centered */}
+          {/* Desktop Nav — centered */}
           <nav className="hidden lg:flex items-center gap-7 absolute left-1/2 -translate-x-1/2">
-            {NAV_LINKS.map((link, idx) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className={`text-m-16 transition-colors ${
-                  idx === 0
-                    ? 'text-primary-500'
-                    : 'text-brandGrey-500 hover:text-primary-500'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const active = isActive(link.href);
+              return (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className={`text-m-16 transition-colors ${
+                    active
+                      ? 'text-primary-500'
+                      : 'text-brandGrey-500 hover:text-primary-500'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Right side */}
           <div className="flex items-center gap-3 flex-shrink-0 z-10">
             <Link
-              href="#book-demo-section"
+              href="/#book-demo-section"
               className="hidden sm:inline-flex btn-primary"
             >
               <Sparkles className="w-4 h-4" />
@@ -95,24 +102,27 @@ export default function Header() {
       {/* Mobile drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white border-t border-brandGrey-50 px-4 py-4 space-y-1 shadow-card">
-          {NAV_LINKS.map((link, idx) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              onClick={() => setMobileMenuOpen(false)}
-              className={`block px-3 py-2.5 rounded-btn text-m-16 transition-colors ${
-                idx === 0
-                  ? 'text-primary-500 bg-primary-50'
-                  : 'text-brandGrey-500 hover:bg-brandGrey-50'
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {NAV_LINKS.map((link) => {
+            const active = isActive(link.href);
+            return (
+              <Link
+                key={link.label}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className={`block px-3 py-2.5 rounded-btn text-m-16 transition-colors ${
+                  active
+                    ? 'text-primary-500 bg-primary-50'
+                    : 'text-brandGrey-500 hover:bg-brandGrey-50'
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
 
           <div className="pt-3 mt-2 border-t border-brandGrey-50">
             <Link
-              href="#book-demo-section"
+              href="/#book-demo-section"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full btn-primary"
             >

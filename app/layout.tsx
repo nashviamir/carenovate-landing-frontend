@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -9,7 +11,7 @@ const poppins = Poppins({
   display: 'swap',
 });
 
-const SITE_URL = 'https://carenovate.com';
+const SITE_URL = 'https://nashviamir.github.io/carenovate-landing-frontend';
 const SITE_NAME = 'CareHub by CareNovate';
 const TITLE = 'CareHub by CareNovate | Smart Medication & Task Management';
 const DESCRIPTION =
@@ -121,7 +123,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col">{children}</body>
+      <body className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

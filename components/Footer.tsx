@@ -9,11 +9,11 @@ import {
 } from 'lucide-react';
 
 const SOLUTION_LINKS = [
-  { label: 'Smart Dispenser Hardware', href: '#features' },
-  { label: 'Cloud Platform & Portal', href: '#portal' },
-  { label: 'Automated eMAR Logging', href: '#comparison' },
-  { label: 'Vitals Integration', href: '#portal' },
-  { label: 'Pre-Dose Alerts', href: '#comparison' },
+  { label: 'Smart Dispenser Hardware', href: '/features' },
+  { label: 'Feature Comparison', href: '/features' },
+  { label: 'Automated eMAR Logging', href: '/#comparison' },
+  { label: 'Pre-Dose Alerts', href: '/#comparison' },
+  { label: 'Frequently Asked Questions', href: '/faq' },
 ];
 
 const COMPLIANCE_ITEMS = [
