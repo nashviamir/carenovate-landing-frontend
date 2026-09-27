@@ -40,7 +40,7 @@ export default function Header() {
           >
             <div className="relative h-10 lg:h-12 w-[140px] lg:w-[160px]">
               <Image
-                src="/images/logo.jpeg"
+                src="/carenovate-landing-frontend/images/logo.jpeg"
                 alt="CareNovate"
                 fill
                 priority

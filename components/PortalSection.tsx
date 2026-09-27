@@ -15,28 +15,28 @@ import {
 
 const SCREENS = [
   {
-    src: '/images/portal-1.webp',
+    src: '/carenovate-landing-frontend/images/portal-1.webp',
     tab: 'Daily Reports',
     label: 'Daily Reports Dashboard',
     caption: 'Facility-wide shift performance at a glance',
     path: 'daily-reports',
   },
   {
-    src: '/images/portal-2.png',
+    src: '/carenovate-landing-frontend/images/portal-2.png',
     tab: 'Vitals',
     label: 'Vitals Tracking',
     caption: 'Total, high-risk, and stable vitals per resident',
     path: 'vitals',
   },
   {
-    src: '/images/portal-3.png',
+    src: '/carenovate-landing-frontend/images/portal-3.png',
     tab: 'Doctors',
     label: 'Doctors & Specialists',
     caption: 'Primary care and specialty physician directory',
     path: 'doctors',
   },
   {
-    src: '/images/portal-4.webp',
+    src: '/carenovate-landing-frontend/images/portal-4.webp',
     tab: 'Patients',
     label: 'Patient Overview',
     caption: 'Complete resident profile and history',
