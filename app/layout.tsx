@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     images: [
       {
-        url: '/images/device.jpg',
+        url: '/carenovate-landing-frontend/images/device.jpg',
         width: 1200,
         height: 630,
         alt: 'CareHub Smart Medication Dispenser',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: TITLE,
     description: DESCRIPTION,
-    images: ['/images/device.jpg'],
+    images: ['/carenovate-landing-frontend/images/device.jpg'],
   },
   robots: {
     index: true,

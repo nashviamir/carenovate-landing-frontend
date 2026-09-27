@@ -108,7 +108,7 @@ export default function Hero() {
               {/* Image */}
               <div className="relative overflow-hidden rounded-card-sm bg-brandGrey-50 aspect-[4/3]">
                 <Image
-                  src="/images/device.jpg"
+                  src="/carenovate-landing-frontend/images/device.jpg"
                   alt="CareHub Smart Medication Dispenser"
                   fill
                   priority

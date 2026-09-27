@@ -114,7 +114,7 @@ export default function BenefitsSection() {
           {/* Image side */}
           <div className="relative min-h-[280px] lg:min-h-full bg-brandGrey-50">
             <Image
-              src="/images/care-hero.jpg"
+              src="/carenovate-landing-frontend/images/care-hero.jpg"
               alt="Compassionate elderly care with senior resident and attentive caregiver"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
