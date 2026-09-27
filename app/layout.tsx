@@ -4,7 +4,7 @@ import './globals.css';
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800'],
+  weight: ['400', '500', '700'],
   variable: '--font-poppins',
   display: 'swap',
 });
@@ -17,13 +17,8 @@ const DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-
-  title: {
-    default: TITLE,
-    template: '%s | CareHub',
-  },
+  title: { default: TITLE, template: '%s | CareHub' },
   description: DESCRIPTION,
-
   keywords: [
     'RCFE software',
     'Assisted Living eMAR',
@@ -36,12 +31,9 @@ export const metadata: Metadata = {
     'CareNovate',
     'CareHub',
   ],
-
   authors: [{ name: 'CareNovate Inc.' }],
   creator: 'CareNovate Inc.',
   publisher: 'CareNovate Inc.',
-
-  // Open Graph
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -58,21 +50,12 @@ export const metadata: Metadata = {
       },
     ],
   },
-
-  // Twitter
   twitter: {
     card: 'summary_large_image',
     title: TITLE,
     description: DESCRIPTION,
     images: ['/images/device.jpg'],
   },
-
-  // Icons (اگر بعداً favicon اضافه کردی)
-  icons: {
-    icon: '/favicon.ico',
-  },
-
-  // Robots
   robots: {
     index: true,
     follow: true,
@@ -84,14 +67,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-
-  // Canonical
-  alternates: {
-    canonical: SITE_URL,
-  },
+  alternates: { canonical: SITE_URL },
 };
 
-// JSON-LD Structured Data
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -126,12 +104,6 @@ const jsonLd = {
       operatingSystem: 'Web, iOS, Android',
       description:
         'Cloud-based portal used to monitor tasks, sync with dispenser hardware, generate inspection-ready reports, and manage RCFE operations.',
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'USD',
-        description: 'Custom pricing based on facility size and bed count',
-      },
     },
   ],
 };

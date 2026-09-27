@@ -2,24 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================
+   Base layer
+   ============================================ */
 @layer base {
   html {
     scroll-behavior: smooth;
   }
-  body {
-    @apply bg-slate-50 text-slate-900 antialiased selection:bg-primary-500 selection:text-white;
-  }
-}
 
-/* Gradient text (used in Demo & Portal section headings) */
-.carehub-gradient-text {
-  color: #0f3cd7; /* fallback */
-  background-image: linear-gradient(to right, #0f3cd7, #466aff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  font-weight: 800;
+  body {
+    font-family: var(--font-poppins), system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    color: #1e1e1e;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #1e1e1e;
+  }
+
+  strong, b {
+    font-weight: 700;
+  }
 }
 
 /* Custom scrollbar */
@@ -28,11 +35,103 @@
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  @apply bg-slate-100;
+  background: #e9e9e9;
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-300 rounded;
+  background: #b9b9b9;
+  border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-slate-400;
+  background: #dddddd;
+}
+
+/* ============================================
+   Component utilities
+   ============================================ */
+@layer components {
+  /* ---------- Buttons ---------- */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-btn font-bold transition-all duration-200 select-none;
+  }
+
+  /* Primary — Large (padding 16×16) */
+  .btn-primary-lg {
+    @apply btn px-4 py-4 text-b-16 text-white bg-primary-500 hover:bg-primary-700 active:bg-primary-800 border border-transparent;
+  }
+
+  /* Primary — Medium (padding 8×8) */
+  .btn-primary {
+    @apply btn px-2 py-2 text-b-14 text-white bg-primary-500 hover:bg-primary-700 active:bg-primary-800 border border-transparent;
+  }
+
+  /* Outline — Large (same size as btn-primary-lg) */
+  .btn-outline-lg {
+    @apply btn px-4 py-4 text-b-16 text-primary-500 bg-white border border-primary-500 hover:bg-primary-50 active:bg-primary-100;
+  }
+
+  /* Outline — Medium */
+  .btn-outline {
+    @apply btn px-2 py-2 text-b-14 text-primary-500 bg-white border border-primary-500 hover:bg-primary-50 active:bg-primary-100;
+  }
+
+  /* Text */
+  .btn-text {
+    @apply btn px-1.5 py-1.5 text-b-14 text-primary-500 hover:text-primary-700;
+  }
+
+  /* Disabled */
+  .btn:disabled,
+  .btn[disabled] {
+    @apply bg-primary-200 text-white cursor-not-allowed opacity-70;
+  }
+
+  /* ---------- Cards ---------- */
+  .card-base {
+    @apply bg-white rounded-card p-5 shadow-card;
+  }
+
+  .card-compact {
+    @apply bg-white rounded-card-sm p-3 shadow-card;
+  }
+
+  .card-bordered {
+    @apply bg-white rounded-card-sm border border-brandGrey-50;
+  }
+
+  /* ---------- Chips ---------- */
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-chip font-medium;
+  }
+
+  .chip-main {
+    @apply chip px-3 py-1 text-m-12 bg-primary-50 text-primary-700 border border-primary-200;
+  }
+
+  .chip-success {
+    @apply chip px-3 py-1 text-m-12 bg-brandGreen-50 text-brandGreen-800 border border-brandGreen-200;
+  }
+
+  .chip-warning {
+    @apply chip px-3 py-1 text-m-12 bg-brandOrange-50 text-brandOrange-800 border border-brandOrange-200;
+  }
+
+  .chip-error {
+    @apply chip px-3 py-1 text-m-12 bg-brandRed-50 text-brandRed-800 border border-brandRed-200;
+  }
+
+  /* ---------- Inputs ---------- */
+  .input-base {
+    @apply w-full h-10 px-3 rounded-btn bg-white border border-brandGrey-50 text-r-14 text-brandGrey-500 placeholder-brandGrey-200 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500/20 transition-colors;
+  }
+}
+
+/* Gradient text */
+.carehub-gradient-text {
+  color: #0f3cd7;
+  background-image: linear-gradient(to right, #0f3cd7, #0d37c1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 700;
 }
