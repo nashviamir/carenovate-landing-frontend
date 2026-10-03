@@ -1,0 +1,68 @@
+# CareHub website + Payload CMS.
+#
+#   docker compose up -d --build     build and run everything (http://localhost:3000, admin at /admin)
+#   docker compose up -d postgres    just the database, for `npm run dev`
+#
+# Values like PAYLOAD_SECRET come from `.env` (see `.env.example`).
+name: carenovate
+
+x-app-env: &app-env
+  DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD:-postgres}@postgres:5432/carenovate
+  PAYLOAD_SECRET: ${PAYLOAD_SECRET:?set PAYLOAD_SECRET in .env}
+  SITE_URL: ${SITE_URL:-http://localhost:3000}
+  DISABLE_ANALYTICS: ${DISABLE_ANALYTICS:-false}
+  NOINDEX: ${NOINDEX:-false}
+  MEDIA_DIR: /app/media
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: carenovate
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      # Localhost only: lets `npm run dev` and DB tools connect from the host.
+      - '127.0.0.1:5432:5432'
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # One-shot job that runs before the app on every `up`: applies pending
+  # migrations, then seeds any content that doesn't exist yet. Also the
+  # container for the content pipeline, e.g.
+  #   docker compose run --rm tools npm run content:import -- --dry-run
+  tools:
+    build:
+      context: .
+      target: tools
+    environment: *app-env
+    volumes:
+      - media:/app/media
+      - ./content:/app/content
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  app:
+    build:
+      context: .
+      target: runner
+    restart: unless-stopped
+    environment: *app-env
+    volumes:
+      - media:/app/media
+    ports:
+      - '${APP_PORT:-3000}:3000'
+    depends_on:
+      tools:
+        condition: service_completed_successfully
+
+volumes:
+  pgdata:
+  media:

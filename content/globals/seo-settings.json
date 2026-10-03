@@ -1,0 +1,103 @@
+{
+  "defaults": {
+    "siteName": "CareHub by CareNovate",
+    "titleTemplate": "%s | CareHub",
+    "title": "CareHub by CareNovate | Smart Medication & Task Management",
+    "description": "Smart medication dispensing and digitized task management system for Assisted Living and RCFE operators. Zero med errors, audit-ready eMARs, and live shift tracking.",
+    "keywords": [
+      "RCFE software",
+      "Assisted Living eMAR",
+      "smart medication dispenser",
+      "senior care technology",
+      "medication management",
+      "nursing home software",
+      "Title 22 compliance",
+      "audit-ready eMAR",
+      "CareNovate",
+      "CareHub"
+    ],
+    "image": {
+      "$media": "device.jpg"
+    },
+    "locale": "en_US",
+    "twitterCard": "summary_large_image",
+    "twitterHandle": null,
+    "favicon": null,
+    "appleTouchIcon": null,
+    "themeColor": null
+  },
+  "search": {
+    "verification": {
+      "google": null,
+      "bing": null,
+      "yandex": null,
+      "pinterest": null
+    },
+    "robots": {
+      "maxImagePreview": "large",
+      "maxSnippet": -1,
+      "maxVideoPreview": -1
+    },
+    "customMetaTags": []
+  },
+  "crawlers": {
+    "aiPolicy": "allow",
+    "rules": [
+      {
+        "userAgent": "*",
+        "allow": [
+          "/"
+        ],
+        "disallow": [
+          "/admin",
+          "/next/"
+        ]
+      }
+    ],
+    "extra": null
+  },
+  "llms": {
+    "enabled": true,
+    "content": null
+  },
+  "organization": {
+    "type": "MedicalOrganization",
+    "name": "CareNovate Inc.",
+    "legalName": "CareNovate Inc.",
+    "description": "US-based healthcare innovator behind CareHub smart medication management system for senior living.",
+    "logo": {
+      "$media": "logo.jpeg"
+    },
+    "foundingDate": null,
+    "contactType": "sales",
+    "sameAs": [
+      {
+        "url": "https://www.linkedin.com/company/carenovate"
+      }
+    ],
+    "address": {
+      "street": null,
+      "locality": "Irvine",
+      "region": "California",
+      "postalCode": null,
+      "country": "US"
+    },
+    "additionalJsonLd": [
+      {
+        "name": "CareHub Smart Dispenser",
+        "@type": "MedicalDevice",
+        "description": "Smart dispenser machines capable of storing and dispensing prescribed or OTC medications in various shapes with real-time dosing alerts and eMAR verification.",
+        "isRelatedTo": "Residential Care Facilities for the Elderly (RCFE) & Assisted Living",
+        "manufacturer": "CareNovate Inc.",
+        "recognizingAuthority": "FDA Exempt Class I Data System"
+      },
+      {
+        "name": "CareHub Cloud Platform",
+        "@type": "SoftwareApplication",
+        "description": "Cloud-based portal used to monitor tasks, sync with dispenser hardware, generate inspection-ready reports, and manage RCFE operations.",
+        "operatingSystem": "Web, iOS, Android",
+        "applicationCategory": "HealthApplication"
+      }
+    ]
+  }
+}

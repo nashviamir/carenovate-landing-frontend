@@ -1,0 +1,88 @@
+{
+  "brandName": "Care==Novate==",
+  "brandSuffix": "Inc.",
+  "description": "US-designed healthcare hardware and cloud software for senior living — engineered for automated medication accuracy, caregiver efficiency, and complete state audit readiness.",
+  "linkedinLabel": "Follow on LinkedIn",
+  "solutions": {
+    "heading": "Solution Modules",
+    "links": [
+      {
+        "label": "Smart Dispenser Hardware",
+        "href": "/features"
+      },
+      {
+        "label": "Feature Comparison",
+        "href": "/features"
+      },
+      {
+        "label": "Automated eMAR Logging",
+        "href": "/#comparison"
+      },
+      {
+        "label": "Pre-Dose Alerts",
+        "href": "/#comparison"
+      },
+      {
+        "label": "Frequently Asked Questions",
+        "href": "/faq"
+      }
+    ]
+  },
+  "compliance": {
+    "heading": "Compliance",
+    "items": [
+      {
+        "text": "FDA Exempt Class I MDDS"
+      },
+      {
+        "text": "US Patented Dispensing Tech"
+      },
+      {
+        "text": "UCI Clinical Refactor"
+      },
+      {
+        "text": "HIPAA Compliant Cloud"
+      },
+      {
+        "text": "Title 22 Aligned"
+      }
+    ]
+  },
+  "company": {
+    "heading": "Company",
+    "links": [
+      {
+        "label": "About CareNovate",
+        "href": "#"
+      },
+      {
+        "label": "Careers",
+        "href": "#"
+      },
+      {
+        "label": "Press & Media",
+        "href": "#"
+      },
+      {
+        "label": "Partners",
+        "href": "#"
+      }
+    ]
+  },
+  "legalLinks": [
+    {
+      "label": "Privacy Policy (HIPAA)",
+      "href": "#"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "#"
+    },
+    {
+      "label": "Security Whitepaper",
+      "href": "#"
+    }
+  ],
+  "disclaimer": "**Regulatory Disclaimer:** CareHub™ by CareNovate Inc. is categorized as an FDA Exempt Class I Medical Device Data System (MDDS) designed for the transfer, storage, and display of medical device data and electronic medication administration records (eMAR). CareHub supports licensed healthcare providers and caregiver staff; it does not replace professional clinical evaluation.",
+  "copyright": "CareNovate Inc. All rights reserved."
+}

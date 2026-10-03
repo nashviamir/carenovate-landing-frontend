@@ -1,0 +1,2 @@
+# Content bundle images must never be touched by line-ending conversion.
+content/media/** binary

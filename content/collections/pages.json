@@ -1,0 +1,496 @@
+[
+  {
+    "title": "FAQ",
+    "layout": [
+      {
+        "blockType": "faq",
+        "intro": {
+          "chip": "Answers for Facility Administrators",
+          "heading": "Frequently Asked ==Questions==",
+          "description": "Everything you need to know about implementing CareHub in your Assisted Living or RCFE community."
+        },
+        "items": [
+          {
+            "question": "What is CareHub, and how does it fit into our RCFE / Assisted Living facility?",
+            "answer": "CareHub™ by CareNovate is an all-in-one medication dispensing and facility management solution created specifically for Assisted Living and Residential Care Facilities for the Elderly (RCFE). It pairs physical smart dispensing machines with a secure cloud management portal to eliminate medication errors, automate eMAR charting, and keep your facility 100% audit-ready."
+          },
+          {
+            "question": "How does the smart dispenser handle different pill shapes and sizes?",
+            "answer": "Our US-patented dispensing technology features an adaptive metering chamber engineered in partnership with University of California Irvine (UCI). It accommodates standard tablets, coated caplets, oblong shapes, and softgel capsules with precision optical and weight verification."
+          },
+          {
+            "question": "Is CareHub compliant with California Title 22 and State Licensing requirements?",
+            "answer": "Yes. CareHub was built from the ground up to exceed state regulatory standards for medication storage, logging, destruction, and self-administration oversight. It is recognized as an FDA Exempt Class I Medical Device Data System (MDDS), guaranteeing strict adherence to medical record security and HIPAA standards."
+          },
+          {
+            "question": "How difficult is it to migrate our facility from paper MARs or our existing software?",
+            "answer": "Our dedicated onboarding team manages 100% of your initial setup. We support legacy data migration from existing EHR/eMAR software (such as PointClickCare, MatrixCare, and Eldermark) or paper records. Most facilities complete caregiver training in less than 90 minutes with zero downtime."
+          },
+          {
+            "question": "What happens if our facility loses power or internet connectivity?",
+            "answer": "CareHub is engineered with critical life-safety redundancy. Each dispenser includes a built-in battery backup providing up to 36 hours of operation, and an internal cryptographic memory buffer that continues dispensing and logging offline. The moment Wi-Fi or cellular connectivity returns, all records sync automatically to the cloud."
+          },
+          {
+            "question": "What kind of customer support is included with CareHub?",
+            "answer": "Every facility receives 24/7/365 real-time priority support from our US-based clinical care desk. Whether it's 2 PM on a Tuesday or 3 AM on a holiday, your caregivers have direct instant phone and video access to a CareNovate technical specialist."
+          }
+        ],
+        "faqSchema": true,
+        "cta": {
+          "heading": "Have a specific facility or pharmacy question?",
+          "description": "Our clinical systems team is available to review your facility's medication schedules, pharmacy pack types, and floor plans.",
+          "button": {
+            "label": "Schedule a Clinical Q&A Walkthrough",
+            "href": "/#book-demo-section"
+          }
+        },
+        "blockName": null
+      }
+    ],
+    "meta": {
+      "title": "FAQ",
+      "description": "Answers about implementing CareHub in your facility.",
+      "image": null,
+      "ignoreTitleTemplate": false,
+      "keywords": [],
+      "ogTitle": null,
+      "ogDescription": null,
+      "noindex": false,
+      "nofollow": false,
+      "canonical": null,
+      "excludeFromSitemap": false,
+      "sitemapPriority": 0.7,
+      "sitemapChangeFrequency": "monthly",
+      "customMetaTags": [],
+      "jsonLd": null
+    },
+    "generateSlug": false,
+    "slug": "faq"
+  },
+  {
+    "title": "Features",
+    "layout": [
+      {
+        "blockType": "hardware",
+        "intro": {
+          "chip": "Pillar 1 — Hardware Architecture",
+          "heading": "Engineered in the USA. ==Patented Precision.==",
+          "description": "Six hardware capabilities working together — hover or tap to explore."
+        },
+        "deviceName": "CareHub Smart Dispenser",
+        "modelBadge": "CH-2000",
+        "image": {
+          "$media": "9856.jpg"
+        },
+        "stats": [
+          {
+            "value": "28",
+            "label": "Slots",
+            "highlighted": false
+          },
+          {
+            "value": "Dual",
+            "label": "Sensor",
+            "highlighted": true
+          },
+          {
+            "value": "FDA",
+            "label": "Exempt",
+            "highlighted": true
+          }
+        ],
+        "specs": [
+          {
+            "title": "Multi-Shape Adaptive Dispensing",
+            "icon": "Pill",
+            "description": "Patented carousel mechanics handle diverse pill and capsule geometries—from tiny micro-tablets to large softgels without jamming.",
+            "detail": "Supports up to 28 discrete medication schedules"
+          },
+          {
+            "title": "Dual-Verification Sensor Array",
+            "icon": "ScanLine",
+            "description": "Every dispensed dose is validated by high-frequency optical beam sensors and micro-load cell weight checks before release.",
+            "detail": "Verified count timestamped to milliseconds"
+          },
+          {
+            "title": "Integrated Touchscreen Terminal",
+            "icon": "MonitorSmartphone",
+            "description": "Brushed stainless-steel front face houses an intuitive color display showing resident photo, vitals, allergy alerts, and dosage instructions.",
+            "detail": "High contrast UI tuned for caregiver speed"
+          },
+          {
+            "title": "Tamper-Proof Secure Enclosure",
+            "icon": "Lock",
+            "description": "Heavy-duty medical-grade housing with electronic solenoid locks prevents diversion, tampering, and unauthorized pill access.",
+            "detail": "Biometric and NFC staff badge authentication"
+          },
+          {
+            "title": "Direct Vitals & Water Glass Station",
+            "icon": "HeartPulse",
+            "description": "Dedicated hygienic alcove accommodates standard medicine and water cups, with Bluetooth sync for blood pressure, pulse, and temperature.",
+            "detail": "Seamless caregiver workflow in one spot"
+          },
+          {
+            "title": "Always-On Offline Safeguard",
+            "icon": "Zap",
+            "description": "Built-in rechargeable battery backup and local offline flash storage ensure uninterrupted medication delivery even during grid outages.",
+            "detail": "Up to 36 hours autonomous operation"
+          }
+        ],
+        "ctaLabel": "Request a Hardware Hands-on Evaluation",
+        "blockName": null
+      },
+      {
+        "blockType": "comparisonTable",
+        "intro": {
+          "chip": "Feature Comparison Matrix",
+          "heading": "Traditional Facility vs. ==CareHub™ System==",
+          "description": "A side-by-side comparison of operational areas — from medication dosing to state inspection readiness."
+        },
+        "columns": {
+          "area": "Operational Area",
+          "traditional": "Traditional Practice",
+          "carehub": "CareHub™ System",
+          "impact": "Verified Impact"
+        },
+        "rows": [
+          {
+            "area": "Medication Dosing & Verification",
+            "traditional": "Manual pill counts by tired caregivers. Prone to double dosing, wrong timing, or omitted doses.",
+            "carehub": "Smart dispenser counts and dispenses exact prescribed pill/capsule counts via optical & weight sensors.",
+            "impact": "99.99% Dispensing Accuracy"
+          },
+          {
+            "area": "Dosing Alerts & Prevention",
+            "traditional": "Caregivers rely on memory or sticky notes. Missed doses discovered only after shift handoff.",
+            "carehub": "Proactive audio-visual and mobile alerts trigger before dosing windows close to prevent incidents.",
+            "impact": "Zero Missed Doses"
+          },
+          {
+            "area": "eMAR & Shift Documentation",
+            "traditional": "Handwritten paper logs or manual eMAR typing at shift end; records often incomplete or hurried.",
+            "carehub": "Instant 1-tap automated eMAR logging synchronized directly with each dispenser action.",
+            "impact": "1.5+ Hours Saved Per Shift"
+          },
+          {
+            "area": "Refusals & Self-Administration",
+            "traditional": "Refusal reasons undocumented or forgotten. Self-administration lacks witness confirmation.",
+            "carehub": "Mandatory caregiver reason capture with physician notification flags and resident signature capture.",
+            "impact": "100% Audit-Ready Records"
+          },
+          {
+            "area": "Medication Storage & Security",
+            "traditional": "Cluttered carts and open countertops vulnerable to mix-ups, theft, or unauthorized access.",
+            "carehub": "Tamper-proof, locked smart vaults with biometric/PIN credentialed caregiver access control.",
+            "impact": "Zero Unauthorized Access"
+          },
+          {
+            "area": "State Inspection Preparedness",
+            "traditional": "High-stress scrambles digging through paper binders and missing log sheets during state inspections.",
+            "carehub": "Instant 1-click inspection export generates complete historical trails for any resident in under 5 seconds.",
+            "impact": "Zero Inspection Citations"
+          }
+        ],
+        "blockName": null
+      }
+    ],
+    "meta": {
+      "title": "Features",
+      "description": "CareHub Smart Dispenser hardware capabilities and feature comparison.",
+      "image": null,
+      "ignoreTitleTemplate": false,
+      "keywords": [],
+      "ogTitle": null,
+      "ogDescription": null,
+      "noindex": false,
+      "nofollow": false,
+      "canonical": null,
+      "excludeFromSitemap": false,
+      "sitemapPriority": 0.8,
+      "sitemapChangeFrequency": "monthly",
+      "customMetaTags": [],
+      "jsonLd": null
+    },
+    "generateSlug": false,
+    "slug": "features"
+  },
+  {
+    "title": "Home",
+    "layout": [
+      {
+        "blockType": "hero",
+        "badge": "Next-Gen RCFE & Assisted Living Medication Security",
+        "heading": "Never Face Medication ==Guesswork or Audit Anxiety== in Your Facility Again.",
+        "intro": "Built for **Assisted Living & RCFE operators**. Every dose, note, and task is ==automatically logged, verified, and audit-ready==.",
+        "bullets": [
+          {
+            "text": "Zero memory-based logging"
+          },
+          {
+            "text": "Real-time pre-dose alerts"
+          },
+          {
+            "text": "1-click eMAR audits"
+          },
+          {
+            "text": "Multi-shape pill handling"
+          }
+        ],
+        "primaryCta": {
+          "label": "Book a Live Facility Demo",
+          "href": "/contact"
+        },
+        "secondaryCta": {
+          "label": "Explore Smart Dispenser",
+          "href": "/features"
+        },
+        "image": {
+          "$media": "device.jpg"
+        },
+        "blockName": null
+      },
+      {
+        "blockType": "beforeAfter",
+        "intro": {
+          "chip": "The Reality of Senior Living Medication Management",
+          "heading": "From Manual Panic to ==Digital Serenity==",
+          "description": "Traditional facilities rely on caregiver memory, manual counts, and binders of paperwork. It works—until a dose is missed, a shift changes, or a state inspector walks through the door."
+        },
+        "beforeImage": {
+          "$media": "before.jpg"
+        },
+        "afterImage": {
+          "$media": "after.jpg"
+        },
+        "beforeTab": "Current Reality",
+        "afterTab": "CareHub™ Standard",
+        "beforeBadge": "Current Manual Chaos & Binders",
+        "afterBadge": "CareHub Digital Peace of Mind",
+        "challenges": {
+          "title": "Current Facility Challenges",
+          "subtitle": "The high cost of manual processes & paper memory",
+          "items": [
+            {
+              "title": "Manual Counts & Cluttered Storage",
+              "description": "Dozens of open prescription bottles crowded on nurse station countertops. Pill counts rely on tired staff during chaotic shift transitions."
+            },
+            {
+              "title": "End-of-Shift Memory Logging",
+              "description": "Caregivers backfill handwritten notes and manual eMAR forms from memory hours after the event, leaving gaps in dose timing and vitals."
+            },
+            {
+              "title": "Incomplete Refusals & Self-Administration",
+              "description": "When a resident refuses a dose or self-administers, real-time documentation is skipped, creating immediate regulatory non-compliance."
+            },
+            {
+              "title": "State Inspection Panic",
+              "description": "When inspectors ask for 90 days of MAR history, administrators spend hours flipping through binders trying to locate missing pages."
+            }
+          ]
+        },
+        "solutions": {
+          "title": "Facility on CareHub™",
+          "subtitle": "Total automated security, accuracy & verification",
+          "items": [
+            {
+              "title": "Smart Dispenser Hardware Security",
+              "description": "Medications safely locked inside tamper-proof vaults. Every dose is counted, optical-verified, and dispensed in exact prescribed quantities."
+            },
+            {
+              "title": "Pre-Dose Real-Time Alert Engine",
+              "description": "Active audio-visual alerts notify caregivers on their tablets and dispensers before a dosing window expires—preventing missed doses before they happen."
+            },
+            {
+              "title": "Automated eMARs, Vitals & Daily Notes",
+              "description": "Dispenses automatically log to resident charts with biometric confirmation, blood pressure/pulse readings, and structured caregiver notes."
+            },
+            {
+              "title": "Instant 1-Click State Inspection Reports",
+              "description": "Produce immaculate, cryptographic audit trails for state inspectors in less than 3 seconds. Zero guesswork, zero citations."
+            }
+          ]
+        },
+        "blockName": null
+      },
+      {
+        "blockType": "portal",
+        "intro": {
+          "chip": "Pillar 2 — Cloud Ecosystem",
+          "heading": "Total Facility Transparency, ==Live Every Shift==",
+          "description": "CareHub digitizes prescriptions, tasks, vitals, eMAR records, and caregiver notes — accessible from any device, at any facility."
+        },
+        "urlPrefix": "portal.carenovate.com/",
+        "liveLabel": "Live",
+        "screens": [
+          {
+            "tab": "Daily Reports",
+            "icon": "FileText",
+            "path": "daily-reports",
+            "label": "Daily Reports Dashboard",
+            "caption": "Facility-wide shift performance at a glance",
+            "image": {
+              "$media": "portal-1.webp"
+            }
+          },
+          {
+            "tab": "Vitals",
+            "icon": "Activity",
+            "path": "vitals",
+            "label": "Vitals Tracking",
+            "caption": "Total, high-risk, and stable vitals per resident",
+            "image": {
+              "$media": "portal-2.png"
+            }
+          },
+          {
+            "tab": "Doctors",
+            "icon": "Users",
+            "path": "doctors",
+            "label": "Doctors & Specialists",
+            "caption": "Primary care and specialty physician directory",
+            "image": {
+              "$media": "portal-3.png"
+            }
+          },
+          {
+            "tab": "Patients",
+            "icon": "UserCircle",
+            "path": "patient-overview",
+            "label": "Patient Overview",
+            "caption": "Complete resident profile and history",
+            "image": {
+              "$media": "portal-4.webp"
+            }
+          }
+        ],
+        "cta": {
+          "label": "See the Live Portal in Action",
+          "href": "#book-demo-section"
+        },
+        "note": "HIPAA Compliant • Title 22 Aligned",
+        "blockName": null
+      },
+      {
+        "blockType": "benefits",
+        "intro": {
+          "chip": "Enterprise Healthcare Standards",
+          "heading": "Built on Rigorous ==US Healthcare== Standards",
+          "description": "From university research partnerships to domestic manufacturing and 24/7 live facility support, CareHub was architected so RCFE owners sleep peacefully at night."
+        },
+        "items": [
+          {
+            "title": "US-Designed & Manufactured",
+            "icon": "Flag",
+            "description": "All software, firmware, and medical hardware enclosures are conceptualized, assembled, and quality-tested right here in the United States. Fast domestic supply chains ensure zero equipment backlogs.",
+            "highlight": "100% Domestic Assembly"
+          },
+          {
+            "title": "FDA Exempt Class I MDDS",
+            "icon": "ShieldCheck",
+            "description": "Categorized under FDA Medical Device Data Systems (MDDS) Class I Exempt guidelines. Meets all state Department of Social Services (CDSS Title 22) and elder care medication safety directives.",
+            "highlight": "HIPAA Compliant • Audit Timestamping"
+          },
+          {
+            "title": "Patented Dispensing Technology",
+            "icon": "Award",
+            "description": "Protected by multiple United States patents covering multi-shape pill singulation, dual-beam optical counting, and anti-jam sensor matrices that accommodate diverse medication geometries.",
+            "highlight": "Proprietary Hardware & Sensor IP"
+          },
+          {
+            "title": "UCI Clinical Refactor Partner",
+            "icon": "GraduationCap",
+            "description": "Partnered with researchers and biomedical engineers at the University of California, Irvine (UCI) to refactor dispensing precision algorithms and streamline elderly care workflows.",
+            "highlight": "Academic Engineering Collaboration"
+          },
+          {
+            "title": "Easy Migration & Legacy Integration",
+            "icon": "RefreshCw",
+            "description": "Effortlessly syncs with or replaces legacy systems like PointClickCare, MatrixCare, and paper binders. Our white-glove migration team digitizes your resident records with zero downtime.",
+            "highlight": "Full EHR / Pharmacy Compatibility"
+          },
+          {
+            "title": "24/7 Dedicated Support & Training",
+            "icon": "Headphones",
+            "description": "Every facility receives dedicated on-site or interactive staff certification. Your caregivers have direct 24/7/365 access to our US-based clinical technical support desk.",
+            "highlight": "Under 2-Minute Average Answer Time"
+          }
+        ],
+        "banner": {
+          "eyebrow": "Human-Centered Technology",
+          "heading": "Giving Caregivers Time Back to Actually Care",
+          "body": "Technology shouldn't get between your caregivers and your residents. By automating the mechanical tasks of pill counting, lockboxes, and frantic charting, your team spends their shifts doing what matters most: connecting with residents, noticing changes, and ensuring human dignity.",
+          "cta": {
+            "label": "Schedule a 20-Min Facility Walkthrough",
+            "href": "#book-demo-section"
+          },
+          "image": {
+            "$media": "care-hero.jpg"
+          }
+        },
+        "blockName": null
+      },
+      {
+        "blockType": "bookDemo",
+        "intro": {
+          "chip": "Priority Facility Demonstration",
+          "heading": "See CareHub™ in Action on Your ==Next Shift==",
+          "description": "20-minute live walkthrough. No slides, no sales pitch."
+        },
+        "steps": [
+          {
+            "number": "01",
+            "title": "Book Your Slot",
+            "description": "Under 30 seconds",
+            "icon": "Calendar"
+          },
+          {
+            "number": "02",
+            "title": "Live Walkthrough",
+            "description": "Real-time demo",
+            "icon": "Monitor"
+          },
+          {
+            "number": "03",
+            "title": "Custom Proposal",
+            "description": "Tailored pricing",
+            "icon": "FileCheck"
+          }
+        ],
+        "highlightsLabel": "What You Will See",
+        "highlights": [
+          {
+            "text": "Dual-sensor dispenser verification"
+          },
+          {
+            "text": "90-day eMAR audit in 3 seconds"
+          },
+          {
+            "text": "Custom hardware for your beds"
+          }
+        ],
+        "formTitle": "Reserve Your Slot",
+        "formSubtitle": "We will confirm by email within minutes",
+        "blockName": null
+      }
+    ],
+    "meta": {
+      "title": "CareHub by CareNovate | Smart Medication & Task Management",
+      "description": "Smart medication dispensing and digitized task management system for Assisted Living and RCFE operators. Zero med errors, audit-ready eMARs, and live shift tracking.",
+      "image": null,
+      "ignoreTitleTemplate": true,
+      "keywords": [],
+      "ogTitle": null,
+      "ogDescription": null,
+      "noindex": false,
+      "nofollow": false,
+      "canonical": null,
+      "excludeFromSitemap": false,
+      "sitemapPriority": 1,
+      "sitemapChangeFrequency": "monthly",
+      "customMetaTags": [],
+      "jsonLd": null
+    },
+    "generateSlug": false,
+    "slug": "home"
+  }
+]
